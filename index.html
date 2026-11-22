@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP Verification</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="card">
+        <h2>OTP Verification</h2>
+        <p class="subtitle">Enter the 5 digit code</p>
+
+        <div class="otp-box">
+            <input type="text" maxlength="1" id="i1">
+            <input type="text" maxlength="1" id="i2">
+            <input type="text" maxlength="1" id="i3">
+            <input type="text" maxlength="1" id="i4">
+            <input type="text" maxlength="1" id="i5">
+        </div>
+
+        <div class="buttons">
+            <button onclick="verifyOTP()">Verify</button>
+            <button onclick="clearOTP()" class="clear">Clear</button>
+        </div>
+
+        <p id="message"></p>
+    </div>
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>
